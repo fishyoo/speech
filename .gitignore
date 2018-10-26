@@ -1,3 +1,4 @@
+#-------------------------------------
 #for common
 *.com
 *.class
@@ -12,6 +13,7 @@
 *.dbg
 *.DBG
 
+#-------------------------------------
 #for build
 *.dylib
 *.ll
@@ -43,6 +45,20 @@ build-debug/*
 
 .DS_Store
 
+#-------------------------------------
+# for tmp.tmp.cpp
+*.tmp.*
+
+# for temp *.doc
+~*
+*~
+*.ini
+*.exe.*
+
+
+#-------------------------------------
 #for this repository
 *Demo
-log-recognizer.txt
+log*.txt
+
+
