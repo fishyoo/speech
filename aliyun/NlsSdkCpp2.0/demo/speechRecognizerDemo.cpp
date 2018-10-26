@@ -297,7 +297,7 @@ void* pthreadFunc(void* arg) {
             cout << "send over." << endl;
             break;
         } else {
-            cout << "send len:" << nlen << " ." << endl;
+            //cout << "send len:" << nlen << " ." << endl;
         }
 
         /*
@@ -313,7 +313,7 @@ void* pthreadFunc(void* arg) {
 #if defined(_WIN32)
         Sleep(sleepMs);
 #else
-        usleep(sleepMs * 1000);
+        //usleep(sleepMs * 1000);
 #endif
 
         pthread_mutex_lock(&(cbParam.mtx));

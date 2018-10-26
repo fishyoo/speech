@@ -1,7 +1,0 @@
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/edit_cache.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/stSyncDemo.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/srDemo.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/srSyncDemo.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/rebuild_cache.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/syDemo.dir
-/home/fish/speech/aliyun/NlsSdkCpp2.0/build/CMakeFiles/stDemo.dir

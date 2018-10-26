@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/srDemo.dir/demo/speechRecognizerDemo.cpp.o  -o ../demo/srDemo  -L/home/fish/speech/aliyun/NlsSdkCpp2.0/lib/linux -rdynamic -lnlsCppSdk -lssl -lcrypto -lopus -ljsoncpp -luuid -lpthread -Wl,-rpath,/home/fish/speech/aliyun/NlsSdkCpp2.0/lib/linux 
