@@ -26,6 +26,6 @@ make
 
 echo "编译结束..."
 
-echo "可以进入demo目录，执行命令[./demo config.txt your-token]，运行demo"
+echo "可以进入demo目录，执行命令[./demo token_now appkey]，运行demo"
 
 

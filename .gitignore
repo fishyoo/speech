@@ -42,6 +42,7 @@ compile_commands.json
 
 build/*
 build-debug/*
+*/bin/
 
 .DS_Store
 
@@ -60,5 +61,5 @@ build-debug/*
 #for this repository
 *Demo
 log*.txt
-
+xfyun/Linux_aisound/bin
 

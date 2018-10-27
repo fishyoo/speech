@@ -1,3 +1,16 @@
+
+usage: 
+https://doc.xfyun.cn/msc_linux/
+
+
+cmd: (注意：音频文件wav)
+export LD_LIBRARY_PATH=/home/fish/speech/xfyun/Linux_aisound/libs/x64/
+
+./asr_sample wav/iflytek01.wav
+
+
+
+
 ﻿README for Linux_ivw
 -----------------------
 
