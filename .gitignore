@@ -14,7 +14,7 @@
 *.DBG
 
 #-------------------------------------
-#for build
+#for cmake
 *.dylib
 *.ll
 *.bc

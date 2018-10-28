@@ -357,12 +357,12 @@ void* multiRecognize(void* arg) {
 /**
  * 识别单个音频数据
  */
-int speechRecognizerFile(const char* token, const char* appkey) {
+int speechRecognizerFile(const char* token, const char* appkey, string filename) {
 
     ParamStruct pa;
     pa.token = token;
     pa.appkey = appkey;
-    pa.fileName = "test0.wav";
+    pa.fileName = filename;
 
     pthread_t pthreadId;
 
@@ -412,10 +412,16 @@ int speechRecognizerMultFile(const char* token, const char* appkey) {
 
 int main(int arc, char* argv[]) {
 	if (arc < 3) {
-        cout << "params is not valid. Usage: ./demo your_token your_appkey" << endl;
+        cout << "params is not valid. Usage: ./demo your_token your_appkey [filename]" << endl;
         return -1;
     }
 
+	string filename = "test0.wav";
+	if( arc >3 )	
+	{
+		filename = argv[3];
+	}
+	
     // 根据需要设置SDK输出日志, 可选. 此处表示SDK日志输出至log-recognizer.txt， LogDebug表示输出所有级别日志
     int ret = NlsClient::getInstance()->setLogConfig("log-recognizer.txt", LogInfo);
     if (-1 == ret) {
@@ -424,7 +430,7 @@ int main(int arc, char* argv[]) {
     }
 
     // 识别单个音频数据
-    speechRecognizerFile(argv[1], argv[2]);
+    speechRecognizerFile(argv[1], argv[2], filename);
 
     // 识别多个音频数据
     // speechRecognizerMultFile(argv[1], argv[2]);
