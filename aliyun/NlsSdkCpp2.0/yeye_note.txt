@@ -1,0 +1,20 @@
+
+=======================  学习笔记  =======================
+
+[1] 问题：动态库问题？
+error: (when i run the demo)
+fish@ubuntu:~/speech/aliyun/NlsSdkCpp2.0/demo$ ./srDemo 59212528e14c492cab4ebc690526ada3  uw2KeMdBGiqxuWmR
+./srDemo: symbol lookup error: /home/fish/speech/aliyun/NlsSdkCpp2.0/lib/linux/libssl.so.1.0.0: undefined symbol: EVP_idea_cbc
+
+fix: export the PATH
+/speech/aliyun/NlsSdkCpp2.0/demo$ export LD_LIBRARY_PATH=../lib/linux/
+
+
+[2]问题：不能识别？
+使用在实际环境录制的音频（201810291250_yonghe.wav）时，
+发现识别不了，原来是因为阿里云目前只支持16000的采样率，而我的小米手机的录音是44100的，
+所以，用音频转化大师转换为16000的采样率、wav格式、音频质量16 之后，就可以了：
+转换结果：
+result: 宫保鸡丁饭、豆浆要热的。
+
+
