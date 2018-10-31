@@ -259,7 +259,7 @@ void* pthreadFunc(void* arg) {
     request->setFormat("pcm"); // 设置音频数据编码格式, 可选参数, 目前支持pcm, opus, opu. 默认是pcm
     request->setSampleRate(SAMPLE_RATE); // 设置音频数据采样率, 可选参数, 目前支持16000, 8000. 默认是16000
     request->setIntermediateResult(false); // 设置是否返回中间识别结果, 可选参数. 默认false
-    request->setPunctuationPrediction(false); // 设置是否在后处理中添加标点, 可选参数. 默认false
+    request->setPunctuationPrediction(true); // 设置是否在后处理中添加标点, 可选参数. 默认false
     request->setInverseTextNormalization(false); // 设置是否在后处理中执行ITN, 可选参数. 默认false
 
     request->setToken(tst->token.c_str()); // 设置账号校验token, 必填参数
